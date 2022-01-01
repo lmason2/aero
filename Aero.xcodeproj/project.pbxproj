@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A765F122780FC350062BB6F /* AddTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A765F112780FC350062BB6F /* AddTrainingView.swift */; };
 		9AA826E42780D812001EE70E /* AeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA826E32780D812001EE70E /* AeroApp.swift */; };
 		9AA826E62780D812001EE70E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA826E52780D812001EE70E /* ContentView.swift */; };
 		9AA826E82780D814001EE70E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA826E72780D814001EE70E /* Assets.xcassets */; };
 		9AA826EB2780D814001EE70E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA826EA2780D814001EE70E /* Preview Assets.xcassets */; };
 		9AA826ED2780D814001EE70E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA826EC2780D814001EE70E /* Persistence.swift */; };
 		9AA826F02780D814001EE70E /* Aero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AA826EE2780D814001EE70E /* Aero.xcdatamodeld */; };
+		9AA826FB2780DA09001EE70E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA826FA2780DA09001EE70E /* Constant.swift */; };
+		9AA826FE2780DF2C001EE70E /* AllTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA826FD2780DF2C001EE70E /* AllTrainingView.swift */; };
+		9AA827002780F524001EE70E /* TrainingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA826FF2780F523001EE70E /* TrainingDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A765F112780FC350062BB6F /* AddTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrainingView.swift; sourceTree = "<group>"; };
 		9AA826E02780D812001EE70E /* Aero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA826E32780D812001EE70E /* AeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AeroApp.swift; sourceTree = "<group>"; };
 		9AA826E52780D812001EE70E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +28,9 @@
 		9AA826EA2780D814001EE70E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9AA826EC2780D814001EE70E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		9AA826EF2780D814001EE70E /* Aero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aero.xcdatamodel; sourceTree = "<group>"; };
+		9AA826FA2780DA09001EE70E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		9AA826FD2780DF2C001EE70E /* AllTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTrainingView.swift; sourceTree = "<group>"; };
+		9AA826FF2780F523001EE70E /* TrainingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,11 @@
 		9AA826E22780D812001EE70E /* Aero */ = {
 			isa = PBXGroup;
 			children = (
-				9AA826E32780D812001EE70E /* AeroApp.swift */,
-				9AA826E52780D812001EE70E /* ContentView.swift */,
+				9AA826FC2780DF12001EE70E /* Screen */,
+				9AA826F82780D850001EE70E /* Utility */,
+				9AA826F72780D845001EE70E /* View */,
+				9AA826F62780D835001EE70E /* Model */,
 				9AA826E72780D814001EE70E /* Assets.xcassets */,
-				9AA826EC2780D814001EE70E /* Persistence.swift */,
-				9AA826EE2780D814001EE70E /* Aero.xcdatamodeld */,
 				9AA826E92780D814001EE70E /* Preview Content */,
 			);
 			path = Aero;
@@ -71,6 +79,42 @@
 				9AA826EA2780D814001EE70E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9AA826F62780D835001EE70E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AA826EC2780D814001EE70E /* Persistence.swift */,
+				9AA826EE2780D814001EE70E /* Aero.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9AA826F72780D845001EE70E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AA826E52780D812001EE70E /* ContentView.swift */,
+				9AA826FD2780DF2C001EE70E /* AllTrainingView.swift */,
+				9AA826FF2780F523001EE70E /* TrainingDetailView.swift */,
+				9A765F112780FC350062BB6F /* AddTrainingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9AA826F82780D850001EE70E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9AA826FA2780DA09001EE70E /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9AA826FC2780DF12001EE70E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				9AA826E32780D812001EE70E /* AeroApp.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A765F122780FC350062BB6F /* AddTrainingView.swift in Sources */,
+				9AA826FE2780DF2C001EE70E /* AllTrainingView.swift in Sources */,
 				9AA826F02780D814001EE70E /* Aero.xcdatamodeld in Sources */,
 				9AA826ED2780D814001EE70E /* Persistence.swift in Sources */,
+				9AA826FB2780DA09001EE70E /* Constant.swift in Sources */,
 				9AA826E62780D812001EE70E /* ContentView.swift in Sources */,
+				9AA827002780F524001EE70E /* TrainingDetailView.swift in Sources */,
 				9AA826E42780D812001EE70E /* AeroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
