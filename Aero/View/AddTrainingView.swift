@@ -13,8 +13,24 @@ struct AddTrainingView: View {
     @State private var minutes = ""
     @State private var elevation = ""
     @State private var selectedDate = Date()
-    @State private var style = 0
+    @State private var style = -1
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 33.493006, longitude: -111.919740), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    @State private var locations = [RunLocation(id: UUID(), data: "8 miles", image: "", latitude: 33.374164, longitude: -111.985465)]
+    
+    func getMenuSelection() -> String {
+        switch style {
+        case 0:
+            return "Easy"
+        case 1:
+            return "Workout"
+        case 2:
+            return "Long Run"
+        case 3:
+            return "Race"
+        default:
+            return "Type"
+        }
+    }
     
     var body: some View {
         VStack(alignment: .center) {
@@ -56,14 +72,13 @@ struct AddTrainingView: View {
                 }
                 label: {
                     HStack {
-                        Text("Type")
+                        Text(getMenuSelection())
                            .padding(5)
                            .foregroundColor(Color.black)
                         
                         Image(systemName: "chevron.down")
                     }
-                    .padding(.leading, 3)
-                    .padding(.trailing, 3)
+                    .frame(width: 125)
                 }
                 .background(Color(.systemGray5))
                 .cornerRadius(5)
@@ -91,7 +106,11 @@ struct AddTrainingView: View {
                     .padding()
                     .keyboardType(.decimalPad)
             }
-            Map(coordinateRegion: $region)
+            Map(coordinateRegion: $region, annotationItems: locations, annotationContent: { item in
+                MapAnnotation(coordinate: item.location) {
+                    RunMapMarkerView(location: item)
+                } //: ANNOTATION
+            }) //: MAP
                 .cornerRadius(10)
                 .padding()
                 .shadow(radius: 10)

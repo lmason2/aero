@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9A765F122780FC350062BB6F /* AddTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A765F112780FC350062BB6F /* AddTrainingView.swift */; };
+		9A765F1427812F040062BB6F /* MapAnnotationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A765F1327812F040062BB6F /* MapAnnotationLocation.swift */; };
+		9A765F16278138FE0062BB6F /* RunMapMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A765F15278138FE0062BB6F /* RunMapMarkerView.swift */; };
 		9AA826E42780D812001EE70E /* AeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA826E32780D812001EE70E /* AeroApp.swift */; };
 		9AA826E62780D812001EE70E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA826E52780D812001EE70E /* ContentView.swift */; };
 		9AA826E82780D814001EE70E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA826E72780D814001EE70E /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		9A765F112780FC350062BB6F /* AddTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrainingView.swift; sourceTree = "<group>"; };
+		9A765F1327812F040062BB6F /* MapAnnotationLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationLocation.swift; sourceTree = "<group>"; };
+		9A765F15278138FE0062BB6F /* RunMapMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunMapMarkerView.swift; sourceTree = "<group>"; };
 		9AA826E02780D812001EE70E /* Aero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA826E32780D812001EE70E /* AeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AeroApp.swift; sourceTree = "<group>"; };
 		9AA826E52780D812001EE70E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 			children = (
 				9AA826EC2780D814001EE70E /* Persistence.swift */,
 				9AA826EE2780D814001EE70E /* Aero.xcdatamodeld */,
+				9A765F1327812F040062BB6F /* MapAnnotationLocation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 				9AA826FD2780DF2C001EE70E /* AllTrainingView.swift */,
 				9AA826FF2780F523001EE70E /* TrainingDetailView.swift */,
 				9A765F112780FC350062BB6F /* AddTrainingView.swift */,
+				9A765F15278138FE0062BB6F /* RunMapMarkerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +198,8 @@
 				9AA826F02780D814001EE70E /* Aero.xcdatamodeld in Sources */,
 				9AA826ED2780D814001EE70E /* Persistence.swift in Sources */,
 				9AA826FB2780DA09001EE70E /* Constant.swift in Sources */,
+				9A765F16278138FE0062BB6F /* RunMapMarkerView.swift in Sources */,
+				9A765F1427812F040062BB6F /* MapAnnotationLocation.swift in Sources */,
 				9AA826E62780D812001EE70E /* ContentView.swift in Sources */,
 				9AA827002780F524001EE70E /* TrainingDetailView.swift in Sources */,
 				9AA826E42780D812001EE70E /* AeroApp.swift in Sources */,
